@@ -7,6 +7,7 @@
     <!--Font--> 
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/oxi7cle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="styles.css" type="text/css" charset="utf-8" />
     <!--External Stylesheet-->
     <link rel="stylesheet" href="styles.css">
@@ -15,30 +16,30 @@
 <body>
 
     <section>
-        <div class="main-vid">
+        <div class="main-vid flexgrid">
             <video id="videoBG" poster="chateau de gudanes_600px.jpg" autoplay muted loop playinline>
                 <source src="Chateau de Gudanes.mp4" type="video/mp4">
             </video>
-            <span id="main-header" class="centered">CSS Zen Garden</span>
+            <h1 id="main-header" class="centered">CSS Zen Garden</h1>
         </div>
     </section>
 
     <section>
-        <div class="row">
-            <div class="onecolumn">
-                <h1 id="h1-text">The Beauty of CSS</h1>
+        <div class="row flexgrid">
+            <div class="onecolumn flexgrid">
+                <span class="span-text">The Beauty of CSS</span>
                 <p>A demonstration of what can be accomplished through CSS-based design. Select any style sheet from the list to load it into this page.</p>
                 <div class="line"></div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="parallax">
-            <div class="parallax__layer parallax__layer__2">
+    <section >
+        <div id="parallax-flex" class="parallax">
+            <div class="parallax__layer parallax__layer__1">
               <img src="jardin de fleur_trois.png" alt="rose garden line drawing">
             </div>
-            <div class=" parallax_layer parallax_layer_1">
+            <div class=" parallax_layer parallax_layer_2">
               <img src="jardin de fleur_deux.png" alt="rose garden line drawing">
             </div>
             <div class="parallax__layer parallax__layer_3">
@@ -47,25 +48,27 @@
         </div>
     </section>
     <section>
-        <div class="row">
-            <div class="twocolumn">
-                <span><h2 id="h2-text">THE ROAD <br>TO ENLIGHTENMENT</br></h2></span>
+        <div class="row flexgrid">
+            <div  class="twocolumn">
+                <h2 id="h2-one">THE ROAD TO ENLIGHTENMENT </h2>
                 <p class="special-text-p">Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible DOMs, broken CSS support, and abandoned browsers.</p>
-                <p>We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the W3C, WASP, and the major browser creators.</p>          
-                <p>The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the time-honored techniques in 
-                    new and invigorating fashion. Become one with the web.</p>
             </div>
-            <div class="twocolumn">
+                <div class="twocolumn flexgrid">
                 <img class="img-responsive" src="Rococo-The-Perfumed-Garden.jpg" alt="rococo woman in garden">
             </div>
         </div>
     </section>
 
     <section>
-        <div class="row">
-            <div class="onecolumn">
+        <div class="row flexgrid">
+            <div class="twocolumn">
+                <p>We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the W3C, WASP, and the major browser creators.</p>          
+                <p>The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the time-honored techniques in 
+                    new and invigorating fashion. Become one with the web.</p>
+            </div>
+            <div class="twocolumn flexgrid">
                 <div>
-                    <h2 id="h2-text" class="justify-center">SO WHAT IS THIS ABOUT?</h2>
+                    <h2 id="h2-two" class="justify-center">SO WHAT IS THIS ABOUT?</h2>
                 </div>
                 <p>There is a continuing need to show the power of CSS. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. 
                     Clicking on any one will load the style sheet into this very page. The HTML remains the same, the only thing that has changed is the external CSS file. Yes, really. </p>
@@ -76,17 +79,17 @@
         </div>
     </section>
     <section>
-        <div class="secondary-vid">
+        <div class="secondary-vid flexgrid">
             <video id="videoBG" autoplay muted loop playinline>
                 <source src="bloom.mp4" type="video/mp4">
             </video>
-            <span id="main-header" class="centered">bloom</span>
+            <h1 id="main-header" class="centered">bloom</h1>
         </div>
     </section>
     <section>
         <div class="row">
             <div class="onecolumn">
-                <h2 id="h2-text">REQUIREMENTS</h2>
+                <h2 id="h2-three">REQUIREMENTS</h2>
                 <p>Where possible, we would like to see mostly CSS 1 & 2 usage. CSS 3 & 4 should be limited to widely-supported elements only, or strong fallbacks should be provided. The CSS Zen Garden is about functional, practical 
                     CSS and not the latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your CSS validates.</p>
                     
@@ -101,13 +104,83 @@
             </div>
         </div>
     </section>
-
-    <section>
+    <section id="container">
+        <div class="four-cell">
+            <div class="cell-one">
+            <div>
+            <div>
+             <h3>Featured</h3>
+                <ul class="list">
+                              <li>
+                                  <a href="/221/" class="design-name">Mid Century Modern</a> by						<a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
+                              </li>					<li>
+                                  <a href="/220/" class="design-name">Garments</a> by						<a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
+                              </li>					<li>
+                                  <a href="/219/" class="design-name">Steel</a> by						<a href="http://steffen-knoeller.de" class="designer-name">Steffen Knoeller</a>
+                              </li>					<li>
+                                  <a href="/218/" class="design-name">Apothecary</a> by						<a href="http://trentwalton.com" class="designer-name">Trent Walton</a>
+                              </li>					<li>
+                                  <a href="/217/" class="design-name">Screen Filler</a> by						<a href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
+                              </li>					<li>
+                                  <a href="/216/" class="design-name">Fountain Kiss</a> by						<a href="http://jeremycarlson.com" class="designer-name">Jeremy Carlson</a>
+                              </li>					<li>
+                                  <a href="/215/" class="design-name">A Robot Named Jimmy</a> by						<a href="http://meltmedia.com/" class="designer-name">meltmedia</a>
+                              </li>					<li>
+                                  <a href="/214/" class="design-name">Verde Moderna</a> by						<a href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
+                              </li>					</ul>
+            </div>
+            </div>
+            </div>
+           
+            <div class="cell-two">
+                <div>
+                    <h3 class="resources">Resources</h3>
+                        <ul class="list">
+                            <li class="view-css">
+                                <a href="styles.css" title="View the source CSS file of the currently-viewed design.">
+                                    View This Design&#8217;s <abbr title="Cascading Style Sheets">CSS</abbr>						</a>
+                            </li>
+                                <li class="css-resources">
+                                    <a href="http://www.mezzoblue.com/zengarden/resources/" title="Links to great sites with information on using CSS.">
+                                      <abbr title="Cascading Style Sheets">CSS</abbr> Resources</a>
+                                </li>
+                                 <li class="zen-submit">
+                                    <a href="http://www.mezzoblue.com/zengarden/submit/" title="Send in your own CSS file.">
+                                      Submit a Design						</a>
+                            </li>
+                                <li class="zen-translations">
+                                    <a href="http://www.mezzoblue.com/zengarden/translations/" title="View translated versions of this page.">
+                                      Translations						</a>
+                            </li>
+                          </ul>
+                </div>
+            </div>
+            <div class="cell-three">
+                <h4 class="flexgrid">Download CSS + HTML example </h4> 
+                <div>
+                    <button class="button2">HTML</button> <button class="button2">CSS</button>
+                </div>
+            </div>
+            <div class="cell-four">
+                <div>
+                <button  href="http://www.mezzoblue.com/zengarden/faq/" title="A list of Frequently Asked Questions about the Zen Garden.">FAQ</button>
+                </div>
+            </div>
+          </div>
+    </section>
+    <!---<section>
         <div class="row">
             <div class="onecolumn">
                 <img class="img-responsive" src="Woman-in-garden.gif" alt="woman in garden">
             </div>
         </div>
-    </section>
+    </section>-->
 </body>
+<footer>
+             <a href="http://richelle5.github.io" title="Home">HOME</a>
+    	    <a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML">HTML</a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS">CSS</a>
+			<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike.">CC</a>
+			<a href="https://github.com/mezzoblue/csszengarden.com" title="Fork this site on Github" class="zen-github">GH</a>
+</footer>
 </html>
